@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200&display=swap');
+
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif; 
+
+ *{
+    margin:0%;
+    padding: 0%;
+}
+.menu{
+    margin: auto;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.galeria{
+    height: 800px;
+    width: 100%;
+    background-color: rgb(248, 174, 104);
+}
+.galeria .contenedor{
+    height: 800px;
+    width: 100%;
+    background-color:rgb(248, 174, 104);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.galeria .img{
+    border: 4px solid rgb(240, 237, 237);
+   
+}
+
+.img:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter:grayscale(1)
+}
+
+
+.img1{
+    grid-column: 1/ 2;
+    grid-row: 1/3;
+    background-image: url(img/ejecutivo.png);
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(img/juridico\ y\ contable.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    grid-column: 3/3;
+    grid-row: 1/2;
+    background-image: url(img/musculacion.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(img/masoterapia.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img5{
+    grid-column: 3/3;
+    grid-row: 2/3;
+    background-image: url(img/oficios.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+} */
+
+
+
+
+
+    
+}
+@media only screen and (min-width:0px) and (max-width: 649px){
+    .galeria .contenedor{
+        grid-template-columns: repeat(1,    1fr);
+    }
+
+}
+
+
+@media only screen and (min-width:650px) and (max-width:767px){
+    .galeria .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* @media only screen and (min-width:768px){
+
+    
+    .img1{
+        grid-column: 1/ 2;
+        grid-row: 1/3;
+        background-image: url(img/ejecutivo.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(img/juridico\ y\ contable.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img3{
+        grid-column: 3/3;
+        grid-row: 1/2;
+        background-image: url(img/musculacion.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .img4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(img/masoterapia.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .img5{
+        grid-column: 3/3;
+        grid-row: 2/3;
+        background-image: url(img/oficios.jpg);
+        background-size: cover;
+        background-position: center;
+    
+
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#9043f5;
+}
+.titulos {
+    background-color: #9043f5;
+}
+
+.logo{
+    width: 45%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    transform: translate(5px, 15px);
+}
+.logo img{
+    width: 20%;
+}
+.logo h6{
+    margin-left: 0px;
+}
+.menu{
+    width: 100%;
+    float: left;
+    line-height: 40px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(211, 173, 238);
+
+}
+/* main */
+
+.administ{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.administrativos{
+    margin: 3rem 0;
+}
+.administImg {
+    width: 100%;
+    height: 80vh;
+}
+.administ article{
+    margin: 10px 5px 7px 15px;  
+    border: blueviolet;
+    
+}
+.administ article h4{
+    text-align: center;
+    
+}
+.deport{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.deportImg{
+    width: 100%;
+    height: 80vh;
+
+}
+.deport article{
+    margin: 10px 5px 7px 15px;     
+}
+
+.deport article h4{
+    text-align: center;
+}
+.contacto{
+    text-align: center;
+    padding: 10px;
+}
+
+form{
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
+    height: 800px;
+}
+label{
+    color: rgb(20, 19, 19);
+
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+button{
+    width: 100%;
+    border-radius: 5px;
+    height: 1.5rem;
+    border: none;
+    background: rgb(241, 165, 22);
+    color: black;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuFooter ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logofooter{
+    width: 45%;
+    margin-bottom: 400px;
+}
+.logofooter img{
+    width: 20%;
+    margin-bottom: 20%;   
+}
+.menufooter{
+    width: 100%;
+}
+
+/* NOSOTROS */
+.nosotros1 p{
+    font-size: 160%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: 'Oswald', sans-serif;  */
+    
+}
+
+/* ALUMNOS */
+
+.alumnos h2{
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+.alumnos p{
+    animation-duration: 5s;
+    animation-name: aparecer;
+
+}
+
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* AULA VIRTUAL */
+
+form{
+    height: 400px;
+    
+}
+
+
+
+
+
+
+
+
+
+.menuFooter ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h4{
+    font-family: 'Oswald', sans-serif;   
+    color: rgb(34, 4, 82);
+}
+
+
+h1{
+    color: slateblue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: left;
+    font-size: 300%;
+    letter-spacing: 0,1cm;
+    word-spacing: 5px;
+   
+    
+    
+
+
+    
+  
+    
+}
+    .menu ul, li a{
+        color: green;
+        display: flex;
+        list-style: none;
+
+    
+}
+ .item1{
+    height: 1000px;
+    width: 100%;
+    /* background-color: rgba(255, 102, 0, 0.712); */
+    background-image: url(img/Fondo1.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 300%;
+    color: rgb(87, 13, 109);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.container{
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  color: rgb(87, 13, 109);
+  
+
+  font-family: 'Inconsolata', monospace;
+ 
+  margin-left: 0%;
+  margin-bottom: 0%;
+  padding-top: 0%;
+  padding-right: 0%;
+  
+
+}
+.container img {
+    width: 100%;
+    height: 200%;
+   
+}
+
+
+.container p {
+    font-size: 3rem;
+    position: absolute;
+    font-family: 'Inconsolata', monospace;
+ 
+  margin-left: 0%;
+  margin-bottom: 0%;
+  padding-top: 0%;
+  padding-right: 0%;
+
+}
+.centrado h2{
+  width: 100%;
+  text-align: center;
+  height:0px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inconsolata', monospace;
+ 
+  margin-left: 0%;
+  margin-bottom: 0%;
+  padding-top: 0%;
+  padding-right: 0%;
+  color: rgb(52, 38, 182);
+
+
+
+
+}
+
+ul>ul{
+    list-style-type: circle;
+    width: 100%;
+}
+ol{
+    list-style-type: lower-latin;
+}
+.menu li  {
+    display: inline-block;
+    padding: 0px 20px;
+    background: rgb(23, 23, 24);
+    
+}
+
+
+/* MENU */
+
+/* .nav > li {
+    float: left ; */
+}
+.menu{
+    float: left;
+    line-height: 65px;
+  
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding-top: 0px 20px;
+    text-decoration: none;
+    color: rgb(193, 78, 247);
+    transition: all 500ms ease;
+}
+
+
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a:hover{
+   background-color: rgb(145, 61, 179);
+    color:rgb(224, 127, 15);
+}
+  
+.menu .subMenu{
+    position: absolute;
+    background-color: rgb(22, 22, 24);
+    display: none;
+    list-style: none;
+    width: 200px;   
+    
+}
+.subMenu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu ul li a:hover + ul, .menu .subMenu:hover{
+    display: block;
+}
+
+
+
+    
+footer{
+    background-color: #9043f5;
+    clear: left
+}
+
+
+h1{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(243, 234, 247);
+    background-color: #9043f5;
+    margin: 0px 0px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.alumnos h2 {
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    text-align: center;
+
+
+
+    margin-left: 0%;
+    margin-bottom: 10%;
+    padding-top: 0%;
+    padding-right: 0%;
+    
+    
+}
+
+.cursos{
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+
+    margin-left: 0%;
+    margin-bottom: 10%;
+    padding-top: 0%;
+    padding-right: 5%;
+    overflow: hidden;
+    
+}
+
+ /* section home secciones y gradientes/ transiciones */
+ .alumnos {
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+aside{
+    padding: 20px;
+    flex: 30px;
+    background-image: linear-gradient(rgb(238, 205, 156), rgb(243, 166, 23));
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+     
+}
+.nosotros h2{
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+}
+.nosotros h4{
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+.nosotros h5{
+    animation-duration: 6s;
+    animation-name: aparecer;
+}
+.logo h6{
+    animation-duration: 6s;
+    animation-name: aparecer;
+}
+.logo h4{
+    animation-duration: 6s;
+    animation-name: aparecer;
+
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contacto h2{
+    transform: scale(1,1);
+}
+
+.aside h2{
+    transform: scale(1,1);
+    font-weight: bold;
+}
+.section1{
+    flex: 70%;
+    background-color: brown;
+    padding: 60px;
+    background-image: url(img/Fondo1.jpg);
+    height: 700px;
+    text-align: center;
+    color: darkblue;
+    font-family: 'Oswald', sans-serif; 
+}
+.section1 p {
+    color: darkgreen;
+     
+}
+.sec{
+    width: 100%;
+}
+.carousel-indicators li{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+#nav1{
+    background-color: #9043f5 !important;
+}
+/* @media  */
+
+@media only screen and (min-width:0px) and (max-width: 700px) and (orientation:landscape){
+    .sec .carousel slide{
+        text-align: left;
+    }
+
+}
+
+
+footer{
+    padding: 20px;
+    background-color: #9043f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.nosotros1{
+    height: 700px;
+
+}
+.alumnos2 {
+    height: 700px;
+}
+
+.contacto{
+    background-image: linear-gradient(to left, orange,rgb(248, 206, 128));
+}
+
+input {
+    width: 100px;
+    height: 10px;
+    transition: all 3s;
+}
+input:focus{
+    width: 200px;
+    font-size: 20px;
+}
+
+
+
+ */
